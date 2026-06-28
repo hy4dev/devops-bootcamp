@@ -1,0 +1,15 @@
+
+// Dua nameserver Cloudflare //
+Type	Value
+NS	kareem.ns.cloudflare.com
+NS	sharon.ns.cloudflare.com
+
+
+// URL pages.dev portfolio awam dari GitHub + custom domain //
+https://hy4dev.pages.dev/
+hello.hy4dev.com
+
+
+// URL private-site custom subdomain //
+private-site-ex9.pages.dev
+portfolio.hy4dev.com
