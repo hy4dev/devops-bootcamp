@@ -1,0 +1,4 @@
+Dalam sesi Cloudflare 2, para pelajar mempelajari:
+1. Menyediakan web server nginx untuk web.domain sendiri (web.hy4dev.com) dengan IP elastik yang dihoskan oleh EC2 yang dikawal selamat oleh Security Group.
+2. Melihat perbezaan 'Proxied' vs. 'DNS' dan menggunakan pilihan 'Flexible' untuk sambungan https (sebelum ini hanya http sahaja).
+3. Menggunakan Cloudflare Tunnel untuk mendedahkan 'private service' ke internet yang mana tidak memerlukan IP publik and port.
