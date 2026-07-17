@@ -1,0 +1,18 @@
+- Alamat imej ECR
+
+ECR="287347870001.dkr.ecr.ap-southeast-1.amazonaws.com"
+FULL="$ECR/devops-bootcamp/hafifi:v1"
+
+
+- Senarai network & volume
+
+ssm-user@ip-10-0-12-58:/var/snap/amazon-ssm-agent/13009$ sudo docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+8bd62d2fe9f2   arena     bridge    local
+6f9efc6264ae   bridge    bridge    local
+921ea0eaf260   host      host      local
+d73d8cce748c   none      null      local
+
+ssm-user@ip-10-0-12-58:/var/snap/amazon-ssm-agent/13009$ sudo docker volume ls
+DRIVER    VOLUME NAME
+local     me
