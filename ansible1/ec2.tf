@@ -8,17 +8,9 @@ data "aws_ami" "my_ami" {
   }
 }
 
-data "aws_iam_instance_profile" "my_ssm_profile" {
-  name = "EC2-SSM-Role"
-}
-
-data "aws_ssm_parameter" "token" {
-  name = "/devops-bootcamp-2026/tunnel-token"
-}
-
 module "node1" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 6.0"
+  source                 = "terraform-aws-modules/ec2-instance/aws"
+  version                = "~> 6.0"
   name                   = "node1"
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t3.micro"
@@ -30,8 +22,8 @@ module "node1" {
 }
 
 module "node2" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 6.0"
+  source                 = "terraform-aws-modules/ec2-instance/aws"
+  version                = "~> 6.0"
   name                   = "node2"
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t3.micro"
